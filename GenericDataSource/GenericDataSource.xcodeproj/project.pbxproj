@@ -14,6 +14,14 @@
 		9DFC8F5C256ABB590012BABB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DFC8F5A256ABB590012BABB /* LaunchScreen.storyboard */; };
 		9DFC8F67256ABB590012BABB /* GenericDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8F66256ABB590012BABB /* GenericDataSourceTests.swift */; };
 		9DFC8F72256ABB590012BABB /* GenericDataSourceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8F71256ABB590012BABB /* GenericDataSourceUITests.swift */; };
+		9DFC8F87256ABCC70012BABB /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8F86256ABCC70012BABB /* ConfigurableCell.swift */; };
+		9DFC8F8F256ABCE00012BABB /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8F8E256ABCE00012BABB /* ReusableCell.swift */; };
+		9DFC8F95256ABE320012BABB /* GenericDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8F94256ABE320012BABB /* GenericDataProvider.swift */; };
+		9DFC8F9D256ABE590012BABB /* ArrayDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8F9C256ABE590012BABB /* ArrayDataProvider.swift */; };
+		9DFC8FA9256ABEC80012BABB /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8FA8256ABEC80012BABB /* CollectionViewDataSource.swift */; };
+		9DFC8FAE256ABF2B0012BABB /* CollectionArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8FAD256ABF2B0012BABB /* CollectionArrayDataSource.swift */; };
+		9DFC8FB4256AD6B50012BABB /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8FB3256AD6B50012BABB /* TableViewDataSource.swift */; };
+		9DFC8FBC256AD9D40012BABB /* TableArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8FBB256AD9D40012BABB /* TableArrayDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		9DFC8F6D256ABB590012BABB /* GenericDataSourceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericDataSourceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DFC8F71256ABB590012BABB /* GenericDataSourceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataSourceUITests.swift; sourceTree = "<group>"; };
 		9DFC8F73256ABB590012BABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DFC8F86256ABCC70012BABB /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
+		9DFC8F8E256ABCE00012BABB /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
+		9DFC8F94256ABE320012BABB /* GenericDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataProvider.swift; sourceTree = "<group>"; };
+		9DFC8F9C256ABE590012BABB /* ArrayDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDataProvider.swift; sourceTree = "<group>"; };
+		9DFC8FA8256ABEC80012BABB /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
+		9DFC8FAD256ABF2B0012BABB /* CollectionArrayDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionArrayDataSource.swift; sourceTree = "<group>"; };
+		9DFC8FB3256AD6B50012BABB /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		9DFC8FBB256AD9D40012BABB /* TableArrayDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableArrayDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +113,8 @@
 		9DFC8F4E256ABB570012BABB /* GenericDataSource */ = {
 			isa = PBXGroup;
 			children = (
+				9DFC8F93256ABE090012BABB /* DataSources */,
+				9DFC8F85256ABC1C0012BABB /* CellAbstractions */,
 				9DFC8F4F256ABB570012BABB /* AppDelegate.swift */,
 				9DFC8F53256ABB570012BABB /* ViewController.swift */,
 				9DFC8F55256ABB570012BABB /* Main.storyboard */,
@@ -123,6 +141,44 @@
 				9DFC8F73256ABB590012BABB /* Info.plist */,
 			);
 			path = GenericDataSourceUITests;
+			sourceTree = "<group>";
+		};
+		9DFC8F85256ABC1C0012BABB /* CellAbstractions */ = {
+			isa = PBXGroup;
+			children = (
+				9DFC8F86256ABCC70012BABB /* ConfigurableCell.swift */,
+				9DFC8F8E256ABCE00012BABB /* ReusableCell.swift */,
+			);
+			path = CellAbstractions;
+			sourceTree = "<group>";
+		};
+		9DFC8F93256ABE090012BABB /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				9DFC8FB2256AD62D0012BABB /* TableView */,
+				9DFC8FA7256ABEAD0012BABB /* CollectionView */,
+				9DFC8F94256ABE320012BABB /* GenericDataProvider.swift */,
+				9DFC8F9C256ABE590012BABB /* ArrayDataProvider.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		9DFC8FA7256ABEAD0012BABB /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				9DFC8FA8256ABEC80012BABB /* CollectionViewDataSource.swift */,
+				9DFC8FAD256ABF2B0012BABB /* CollectionArrayDataSource.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		9DFC8FB2256AD62D0012BABB /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				9DFC8FB3256AD6B50012BABB /* TableViewDataSource.swift */,
+				9DFC8FBB256AD9D40012BABB /* TableArrayDataSource.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,8 +311,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DFC8FB4256AD6B50012BABB /* TableViewDataSource.swift in Sources */,
+				9DFC8FAE256ABF2B0012BABB /* CollectionArrayDataSource.swift in Sources */,
+				9DFC8F8F256ABCE00012BABB /* ReusableCell.swift in Sources */,
+				9DFC8F9D256ABE590012BABB /* ArrayDataProvider.swift in Sources */,
+				9DFC8F87256ABCC70012BABB /* ConfigurableCell.swift in Sources */,
+				9DFC8FBC256AD9D40012BABB /* TableArrayDataSource.swift in Sources */,
+				9DFC8F95256ABE320012BABB /* GenericDataProvider.swift in Sources */,
 				9DFC8F54256ABB570012BABB /* ViewController.swift in Sources */,
 				9DFC8F50256ABB570012BABB /* AppDelegate.swift in Sources */,
+				9DFC8FA9256ABEC80012BABB /* CollectionViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

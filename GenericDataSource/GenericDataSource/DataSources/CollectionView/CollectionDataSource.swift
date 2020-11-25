@@ -12,7 +12,8 @@ public typealias CollectionItemSelectionHandlerType = (IndexPath) -> Void
 open class CollectionDataSource<Provider: GenericDataProvider, Cell: UICollectionViewCell>:
     NSObject,
     UICollectionViewDataSource,
-    UICollectionViewDelegate
+    UICollectionViewDelegate,
+    UICollectionViewDelegateFlowLayout
     where Cell: ConfigurableCell, Provider.T == Cell.T
 {
     // MARK: - Delegates
@@ -32,7 +33,7 @@ open class CollectionDataSource<Provider: GenericDataProvider, Cell: UICollectio
 
     func setUp() {
         collectionView.dataSource = self
-        collectionView.delegate = self
+        collectionView.delegate = self        
     }
 
     // MARK: - UICollectionViewDataSource
@@ -69,4 +70,10 @@ open class CollectionDataSource<Provider: GenericDataProvider, Cell: UICollectio
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionItemSelectionHandler?(indexPath)
     }
+    
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width / 3, height: 50)
+    }
+    
 }
+

@@ -16,7 +16,7 @@ open class TableDataSource<Provider: GenericDataProvider, Cell: UITableViewCell>
 {
         
     // MARK: - Delegates
-    public var collectionItemSelectionHandler: TableItemSelectionHandlerType?
+    public var tableItemSelectionHandler: TableItemSelectionHandlerType?
 
     // MARK: - Private Properties
     let provider: Provider
@@ -33,6 +33,7 @@ open class TableDataSource<Provider: GenericDataProvider, Cell: UITableViewCell>
     func setUp() {
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.reloadData()
     }
     
     // MARK: UITableViewDataSource
@@ -61,7 +62,7 @@ open class TableDataSource<Provider: GenericDataProvider, Cell: UITableViewCell>
     }
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        collectionItemSelectionHandler?(indexPath)
+        tableItemSelectionHandler?(indexPath)
     }    
     
 }

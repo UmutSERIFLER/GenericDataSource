@@ -16,8 +16,7 @@ open class TableArrayDataSource<T, Cell: UITableViewCell>: TableDataSource<Array
     }
 
     public init(tableView: UITableView, array: [[T]]) {
-        let provider = ArrayDataProvider(array: array)
-        super.init(tableView: tableView, provider: provider)
+        super.init(tableView: tableView, provider: ArrayDataProvider(array: array))
     }
 
     // MARK: - Public Methods

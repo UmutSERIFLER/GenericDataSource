@@ -18,10 +18,19 @@
 		9DFC8F8F256ABCE00012BABB /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8F8E256ABCE00012BABB /* ReusableCell.swift */; };
 		9DFC8F95256ABE320012BABB /* GenericDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8F94256ABE320012BABB /* GenericDataProvider.swift */; };
 		9DFC8F9D256ABE590012BABB /* ArrayDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8F9C256ABE590012BABB /* ArrayDataProvider.swift */; };
-		9DFC8FA9256ABEC80012BABB /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8FA8256ABEC80012BABB /* CollectionViewDataSource.swift */; };
+		9DFC8FA9256ABEC80012BABB /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8FA8256ABEC80012BABB /* CollectionDataSource.swift */; };
 		9DFC8FAE256ABF2B0012BABB /* CollectionArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8FAD256ABF2B0012BABB /* CollectionArrayDataSource.swift */; };
-		9DFC8FB4256AD6B50012BABB /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8FB3256AD6B50012BABB /* TableViewDataSource.swift */; };
+		9DFC8FB4256AD6B50012BABB /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8FB3256AD6B50012BABB /* TableDataSource.swift */; };
 		9DFC8FBC256AD9D40012BABB /* TableArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8FBB256AD9D40012BABB /* TableArrayDataSource.swift */; };
+		9DFC8FD2256AE9ED0012BABB /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8FD0256AE9ED0012BABB /* TabbarViewController.swift */; };
+		9DFC8FD3256AE9ED0012BABB /* TabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DFC8FD1256AE9ED0012BABB /* TabbarViewController.xib */; };
+		9DFC8FDB256AEA170012BABB /* TabbarItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8FDA256AEA170012BABB /* TabbarItemController.swift */; };
+		9DFC8FE1256AF4F80012BABB /* BeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8FE0256AF4F80012BABB /* BeerViewController.swift */; };
+		9DFC8FEE256B01A30012BABB /* BeerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8FED256B01A30012BABB /* BeerViewModel.swift */; };
+		9DFC8FF6256B027B0012BABB /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC8FF5256B027B0012BABB /* BeerTableViewCell.swift */; };
+		9DFC9007256B9EBF0012BABB /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC9006256B9EBE0012BABB /* CountryViewController.swift */; };
+		9DFC900C256B9F2B0012BABB /* CountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC900B256B9F2B0012BABB /* CountryViewModel.swift */; };
+		9DFC9019256B9FAB0012BABB /* CountryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC9018256B9FAB0012BABB /* CountryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,10 +68,19 @@
 		9DFC8F8E256ABCE00012BABB /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
 		9DFC8F94256ABE320012BABB /* GenericDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataProvider.swift; sourceTree = "<group>"; };
 		9DFC8F9C256ABE590012BABB /* ArrayDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDataProvider.swift; sourceTree = "<group>"; };
-		9DFC8FA8256ABEC80012BABB /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
+		9DFC8FA8256ABEC80012BABB /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
 		9DFC8FAD256ABF2B0012BABB /* CollectionArrayDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionArrayDataSource.swift; sourceTree = "<group>"; };
-		9DFC8FB3256AD6B50012BABB /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		9DFC8FB3256AD6B50012BABB /* TableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
 		9DFC8FBB256AD9D40012BABB /* TableArrayDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableArrayDataSource.swift; sourceTree = "<group>"; };
+		9DFC8FD0256AE9ED0012BABB /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		9DFC8FD1256AE9ED0012BABB /* TabbarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabbarViewController.xib; sourceTree = "<group>"; };
+		9DFC8FDA256AEA170012BABB /* TabbarItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarItemController.swift; sourceTree = "<group>"; };
+		9DFC8FE0256AF4F80012BABB /* BeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewController.swift; sourceTree = "<group>"; };
+		9DFC8FED256B01A30012BABB /* BeerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewModel.swift; sourceTree = "<group>"; };
+		9DFC8FF5256B027B0012BABB /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
+		9DFC9006256B9EBE0012BABB /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
+		9DFC900B256B9F2B0012BABB /* CountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewModel.swift; sourceTree = "<group>"; };
+		9DFC9018256B9FAB0012BABB /* CountryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +111,9 @@
 		9DFC8F43256ABB570012BABB = {
 			isa = PBXGroup;
 			children = (
+				9DFC8FEC256B018F0012BABB /* ViewModels */,
+				9DFC8FDF256AF4C10012BABB /* Controllers */,
+				9DFC8FCE256AE9A00012BABB /* UI */,
 				9DFC8F4E256ABB570012BABB /* GenericDataSource */,
 				9DFC8F65256ABB590012BABB /* GenericDataSourceTests */,
 				9DFC8F70256ABB590012BABB /* GenericDataSourceUITests */,
@@ -166,7 +187,7 @@
 		9DFC8FA7256ABEAD0012BABB /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				9DFC8FA8256ABEC80012BABB /* CollectionViewDataSource.swift */,
+				9DFC8FA8256ABEC80012BABB /* CollectionDataSource.swift */,
 				9DFC8FAD256ABF2B0012BABB /* CollectionArrayDataSource.swift */,
 			);
 			path = CollectionView;
@@ -175,10 +196,48 @@
 		9DFC8FB2256AD62D0012BABB /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				9DFC8FB3256AD6B50012BABB /* TableViewDataSource.swift */,
+				9DFC8FB3256AD6B50012BABB /* TableDataSource.swift */,
 				9DFC8FBB256AD9D40012BABB /* TableArrayDataSource.swift */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		9DFC8FCE256AE9A00012BABB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9DFC8FCF256AE9BB0012BABB /* Components */,
+				9DFC8FD0256AE9ED0012BABB /* TabbarViewController.swift */,
+				9DFC8FD1256AE9ED0012BABB /* TabbarViewController.xib */,
+				9DFC8FDA256AEA170012BABB /* TabbarItemController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9DFC8FCF256AE9BB0012BABB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9DFC8FF5256B027B0012BABB /* BeerTableViewCell.swift */,
+				9DFC9018256B9FAB0012BABB /* CountryCollectionViewCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9DFC8FDF256AF4C10012BABB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9DFC8FE0256AF4F80012BABB /* BeerViewController.swift */,
+				9DFC9006256B9EBE0012BABB /* CountryViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9DFC8FEC256B018F0012BABB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9DFC8FED256B01A30012BABB /* BeerViewModel.swift */,
+				9DFC900B256B9F2B0012BABB /* CountryViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DFC8FD3256AE9ED0012BABB /* TabbarViewController.xib in Resources */,
 				9DFC8F5C256ABB590012BABB /* LaunchScreen.storyboard in Resources */,
 				9DFC8F59256ABB590012BABB /* Assets.xcassets in Resources */,
 				9DFC8F57256ABB570012BABB /* Main.storyboard in Resources */,
@@ -311,16 +371,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DFC8FB4256AD6B50012BABB /* TableViewDataSource.swift in Sources */,
+				9DFC8FEE256B01A30012BABB /* BeerViewModel.swift in Sources */,
+				9DFC8FE1256AF4F80012BABB /* BeerViewController.swift in Sources */,
+				9DFC8FB4256AD6B50012BABB /* TableDataSource.swift in Sources */,
 				9DFC8FAE256ABF2B0012BABB /* CollectionArrayDataSource.swift in Sources */,
+				9DFC8FF6256B027B0012BABB /* BeerTableViewCell.swift in Sources */,
+				9DFC8FD2256AE9ED0012BABB /* TabbarViewController.swift in Sources */,
 				9DFC8F8F256ABCE00012BABB /* ReusableCell.swift in Sources */,
+				9DFC900C256B9F2B0012BABB /* CountryViewModel.swift in Sources */,
 				9DFC8F9D256ABE590012BABB /* ArrayDataProvider.swift in Sources */,
 				9DFC8F87256ABCC70012BABB /* ConfigurableCell.swift in Sources */,
+				9DFC9007256B9EBF0012BABB /* CountryViewController.swift in Sources */,
 				9DFC8FBC256AD9D40012BABB /* TableArrayDataSource.swift in Sources */,
 				9DFC8F95256ABE320012BABB /* GenericDataProvider.swift in Sources */,
+				9DFC9019256B9FAB0012BABB /* CountryCollectionViewCell.swift in Sources */,
+				9DFC8FDB256AEA170012BABB /* TabbarItemController.swift in Sources */,
 				9DFC8F54256ABB570012BABB /* ViewController.swift in Sources */,
 				9DFC8F50256ABB570012BABB /* AppDelegate.swift in Sources */,
-				9DFC8FA9256ABEC80012BABB /* CollectionViewDataSource.swift in Sources */,
+				9DFC8FA9256ABEC80012BABB /* CollectionDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
